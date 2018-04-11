@@ -5,13 +5,13 @@
             <element>.begin_split</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-11 10:01:47</sys_created_on>
-            <sys_id>81f11597db511300503772ffbf9619da</sys_id>
+            <sys_created_on>2018-04-11 10:15:56</sys_created_on>
+            <sys_id>8435d5d7db511300503772ffbf961962</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_178741_buildtest_main_table" sys_domain="global" view="Default view">190e29cddb111300503772ffbf9619ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-11 10:01:47</sys_updated_on>
+            <sys_updated_on>2018-04-11 10:15:56</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -19,13 +19,13 @@
             <element>incident_number</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-11 10:01:47</sys_created_on>
-            <sys_id>05f11597db511300503772ffbf9619da</sys_id>
+            <sys_created_on>2018-04-11 10:15:56</sys_created_on>
+            <sys_id>0835d5d7db511300503772ffbf961962</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_178741_buildtest_main_table" sys_domain="global" view="Default view">190e29cddb111300503772ffbf9619ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-11 10:01:47</sys_updated_on>
+            <sys_updated_on>2018-04-11 10:15:56</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -33,71 +33,29 @@
             <element>.split</element>
             <position>2</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-11 10:01:47</sys_created_on>
-            <sys_id>85f11597db511300503772ffbf9619da</sys_id>
+            <sys_created_on>2018-04-11 10:15:56</sys_created_on>
+            <sys_id>8835d5d7db511300503772ffbf961962</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_178741_buildtest_main_table" sys_domain="global" view="Default view">190e29cddb111300503772ffbf9619ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-11 10:01:47</sys_updated_on>
+            <sys_updated_on>2018-04-11 10:15:56</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>select_date</element>
+            <element>.end_split</element>
             <position>3</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-11 10:01:47</sys_created_on>
-            <sys_id>09f11597db511300503772ffbf9619da</sys_id>
+            <sys_created_on>2018-04-11 10:15:56</sys_created_on>
+            <sys_id>0c35d5d7db511300503772ffbf961962</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_178741_buildtest_main_table" sys_domain="global" view="Default view">190e29cddb111300503772ffbf9619ab</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-11 10:01:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>4</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-11 10:01:47</sys_created_on>
-            <sys_id>89f11597db511300503772ffbf9619da</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_178741_buildtest_main_table" sys_domain="global" view="Default view">190e29cddb111300503772ffbf9619ab</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-11 10:01:47</sys_updated_on>
+            <sys_updated_on>2018-04-11 10:15:56</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>comments</element>
-            <position>5</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-11 10:01:47</sys_created_on>
-            <sys_id>0df11597db511300503772ffbf9619da</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_178741_buildtest_main_table" sys_domain="global" view="Default view">190e29cddb111300503772ffbf9619ab</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-11 10:01:47</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>select_datetime</element>
-            <position>6</position>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-04-11 10:01:47</sys_created_on>
-            <sys_id>8df11597db511300503772ffbf9619da</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_178741_buildtest_main_table" sys_domain="global" view="Default view">190e29cddb111300503772ffbf9619ab</sys_ui_section>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-11 10:01:47</sys_updated_on>
-            <sys_user/>
-            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
@@ -111,7 +69,7 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>190e29cddb111300503772ffbf9619ab</sys_id>
-            <sys_mod_count>5</sys_mod_count>
+            <sys_mod_count>12</sys_mod_count>
             <sys_name>x_178741_buildtest_main_table</sys_name>
             <sys_overrides/>
             <sys_package display_value="Build and test" source="x_178741_buildtest">4e25a50ddb111300503772ffbf9619e7</sys_package>
@@ -120,7 +78,7 @@
             <sys_scope display_value="Build and test">4e25a50ddb111300503772ffbf9619e7</sys_scope>
             <sys_update_name>sys_ui_section_190e29cddb111300503772ffbf9619ab</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-04-11 10:01:47</sys_updated_on>
+            <sys_updated_on>2018-04-11 10:15:56</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>

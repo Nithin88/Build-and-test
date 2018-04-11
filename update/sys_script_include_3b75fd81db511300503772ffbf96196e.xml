@@ -44,7 +44,7 @@ ClientScriptDateUtils.prototype = Object.extendsObject(global.AbstractAjaxProces
 		inc.addQuery('number',incno);
 		inc.query();
 		if(inc.next())
-			return	inc.comments.getHTMLValue();
+			return	inc.comments.getHTMLValue() + ',' + inc.comments.getJournalEntry(1);
 
 		//gs.info('getHTMLValue **** ' + inc.comments.getHTMLValue());
 		//gs.info('getJournalEntry Latest entry **** ' + inc.comments.getJournalEntry(1));
@@ -70,7 +70,7 @@ ClientScriptDateUtils.prototype = Object.extendsObject(global.AbstractAjaxProces
         <sys_created_on>2018-04-04 12:51:31</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>3b75fd81db511300503772ffbf96196e</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>ClientScriptDateUtils</sys_name>
         <sys_package display_value="Build and test" source="x_178741_buildtest">4e25a50ddb111300503772ffbf9619e7</sys_package>
         <sys_policy>read</sys_policy>
@@ -78,6 +78,6 @@ ClientScriptDateUtils.prototype = Object.extendsObject(global.AbstractAjaxProces
         <sys_scope display_value="Build and test">4e25a50ddb111300503772ffbf9619e7</sys_scope>
         <sys_update_name>sys_script_include_3b75fd81db511300503772ffbf96196e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-11 09:40:57</sys_updated_on>
+        <sys_updated_on>2018-04-11 10:13:07</sys_updated_on>
     </sys_script_include>
 </record_update>

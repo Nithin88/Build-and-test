@@ -12,13 +12,17 @@
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
 	function getInc(){
+		var spl = '';
 		var incRef = g_form.getDisplayBox('incident_number').value;
 		var gaInc = new GlideAjax('ClientScriptDateUtils');
 		gaInc.addParam('sysparm_name','getJournal');
 		gaInc.addParam('sysparm_incnumber', incRef);
 		gaInc.getXMLAnswer(function(answer){
-			if(answer)
-				g_form.setValue('comments',answer);
+			if(answer){
+				spl = answer.split(',');
+				g_form.setValue('gethtmlvalue',spl[0]);
+				g_form.setValue('getjournalentry', spl[1]);
+			}
 		});
 	}
 
@@ -36,7 +40,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3fbb4117db511300503772ffbf9619b6</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>onChnage_IncidentNumber</sys_name>
         <sys_overrides/>
         <sys_package display_value="Build and test" source="x_178741_buildtest">4e25a50ddb111300503772ffbf9619e7</sys_package>
@@ -45,7 +49,7 @@
         <sys_scope display_value="Build and test">4e25a50ddb111300503772ffbf9619e7</sys_scope>
         <sys_update_name>sys_script_client_3fbb4117db511300503772ffbf9619b6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-11 10:01:28</sys_updated_on>
+        <sys_updated_on>2018-04-11 10:14:53</sys_updated_on>
         <table>x_178741_buildtest_main_table</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
