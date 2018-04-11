@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Main Table" max_length="40" name="x_178741_buildtest_main_table" type="collection">
+        <element label="comments" max_length="8000" name="comments" type="html"/>
+        <element display="true" label="Incident Number" max_length="32" name="incident_number" reference="incident" type="reference"/>
         <element label="Select Date" max_length="40" name="select_date" type="glide_date"/>
         <element label="Select DateTime" max_length="40" name="select_datetime" type="glide_date_time"/>
+        <index name="index">
+            <element name="incident_number"/>
+        </index>
     </element>
 </database>

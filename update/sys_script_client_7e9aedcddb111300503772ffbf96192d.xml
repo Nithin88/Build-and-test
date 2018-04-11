@@ -11,34 +11,29 @@
         <name>onChange_SelectDateTime</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
-	if (isLoading || newValue === '') {
-		// alert('onLoad');
-		return;
+	function showDate(){
+		var gaSelectDt = new GlideAjax('ClientScriptDateUtils');
+		gaSelectDt.addParam('sysparm_name','processDateTime');
+		gaSelectDt.addParam('sysparm_dt', g_form.getValue('select_datetime'));
+		gaSelectDt.getXML(runThisCode);
+
+		function runThisCode(response){
+			var ans = response.responseXML.documentElement.getAttribute("answer");
+			var spl = ans.split(',');
+			spl = 'GlideDateTime methods are as follows {getDayOfMonthLocalTime is ' + spl[0] + '} {getDayOfMonthUTC is ' + spl[1] + '} {getDayOfWeekLocalTime is ' + spl[2] 
+				+ '} {getDaysInMonthLocalTime is ' + spl[3] + '} {getDaysInMonthUTC is ' + spl[4] + '} {getDisplayValue is ' + spl[5] 
+				+ '} {getDisplayValueInternal is ' + spl[6] + '} {getDSTOffset is ' + spl[7] +  '} {getErrorMsg is ' + spl[8] 
+				+  '} {getLocalDate is ' + spl[9] + ' }';
+			g_form.showFieldMsg('select_datetime', spl, 'info');
+		}
 	}
 
-	//alert('DateTime is ' + g_form.getValue('select_datetime'));
-
-	var gaSelectDt = new GlideAjax('ClientScriptDateUtils');
-	gaSelectDt.addParam('sysparm_name','processDateTime');
-	gaSelectDt.addParam('sysparm_dt', g_form.getValue('select_datetime'));
-	/*gaSelectDt.getXMLAnswer(function(answer){
-		alert('CallBack function ' + answer);
-		g_form.showFieldMsg('select_datetime', answer, 'info');
-	});*/
-
-	gaSelectDt.getXML(runThisCode);
-
-	function runThisCode(response){
-		//alert('CallBack function' + response);
-		var ans = response.responseXML.documentElement.getAttribute("answer");
-		//alert('ans is ' + ans);
-		var spl = ans.split(',');
-		spl = 'GlideDateTime methods are as follows {getDayOfMonthLocalTime is ' + spl[0] + '} {getDayOfMonthUTC is ' + spl[1] + '} {getDayOfWeekLocalTime is ' + spl[2] 
-			+ '} {getDaysInMonthLocalTime is ' + spl[3] + '} {getDaysInMonthUTC is ' + spl[4] + '} {getDisplayValue is ' + spl[5] 
-			+ '} {getDisplayValueInternal is ' + spl[6] + '} {getDSTOffset is ' + spl[7] +  '} {getErrorMsg is ' + spl[8] 
-			+  '} {getLocalDate is ' + spl[9] + ' }';
-		g_form.showFieldMsg('select_datetime', spl, 'info');
-	}
+		if (isLoading || newValue === '') {
+showDate();
+			return;
+		}
+		
+showDate();
 
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -48,7 +43,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7e9aedcddb111300503772ffbf96192d</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>28</sys_mod_count>
         <sys_name>onChange_SelectDateTime</sys_name>
         <sys_overrides/>
         <sys_package display_value="Build and test" source="x_178741_buildtest">4e25a50ddb111300503772ffbf9619e7</sys_package>
@@ -57,7 +52,7 @@
         <sys_scope display_value="Build and test">4e25a50ddb111300503772ffbf9619e7</sys_scope>
         <sys_update_name>sys_script_client_7e9aedcddb111300503772ffbf96192d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-04 17:26:35</sys_updated_on>
+        <sys_updated_on>2018-04-11 10:00:25</sys_updated_on>
         <table>x_178741_buildtest_main_table</table>
         <type>onChange</type>
         <ui_type>10</ui_type>

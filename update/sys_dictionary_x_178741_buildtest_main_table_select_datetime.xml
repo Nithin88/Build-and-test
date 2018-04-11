@@ -51,8 +51,8 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-04 11:59:11</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>5d896d8ddb111300503772ffbf96192e</sys_id>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>bb6a0593db511300503772ffbf9619ef</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Select DateTime</sys_name>
         <sys_package display_value="Build and test" source="x_178741_buildtest">4e25a50ddb111300503772ffbf9619e7</sys_package>
@@ -60,8 +60,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Build and test">4e25a50ddb111300503772ffbf9619e7</sys_scope>
         <sys_update_name>sys_dictionary_x_178741_buildtest_main_table_select_datetime</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-04 11:59:11</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-04-11 09:28:59</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
