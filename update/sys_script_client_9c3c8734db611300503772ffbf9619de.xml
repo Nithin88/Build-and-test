@@ -5,53 +5,45 @@
         <applies_extended>false</applies_extended>
         <condition/>
         <description/>
-        <field>incident_number</field>
+        <field>assignment_group</field>
         <global>true</global>
         <messages/>
-        <name>onChnage_IncidentNumber</name>
+        <name>onChange_AssignmentGroup</name>
         <order/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
-	function getInc(){
-		jslog("***** Write to JS Debug log ****** ");
-		var spl = '';
-		var incRef = g_form.getDisplayBox('incident_number').value;
-		var gaInc = new GlideAjax('ClientScriptDateUtils');
-		gaInc.addParam('sysparm_name','getJournal');
-		gaInc.addParam('sysparm_incnumber', incRef);
-		gaInc.getXMLAnswer(function(answer){
-			if(answer){
-				spl = answer.split(',');
-				g_form.setValue('gethtmlvalue',spl[0]);
-				g_form.setValue('getjournalentry', spl[1]);
-			}
-		});
-	}
 
+	var group = g_form.getValue('assignment_group');
+	
 	if (isLoading || newValue === '') {
-		getInc();
-		return;
-	}
-	getInc();
+		if(group === '')
+	   g_form.showErrorBox('assignment_group','Mandatory to select a group (g form showErrorBox)', true);
+      return;
+   }
 
+	if(newValue != ''){
+	g_form.showFieldMsg('description','Enter detailed issue log. ' + g_form.getDisplayBox('assignment_group').value + ' team will look into it (g form showFieldMsg, info)','info' )	;
+		g_form.showFieldMsg('description',"Group name is retrieved using g form getDisplayBox('') value ",'info' )	;
+	}
+   
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-04-11 09:42:00</sys_created_on>
+        <sys_created_on>2018-04-16 10:55:05</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>3fbb4117db511300503772ffbf9619b6</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>onChnage_IncidentNumber</sys_name>
+        <sys_id>9c3c8734db611300503772ffbf9619de</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>onChange_AssignmentGroup</sys_name>
         <sys_overrides/>
         <sys_package display_value="Build and test" source="x_178741_buildtest">4e25a50ddb111300503772ffbf9619e7</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Build and test">4e25a50ddb111300503772ffbf9619e7</sys_scope>
-        <sys_update_name>sys_script_client_3fbb4117db511300503772ffbf9619b6</sys_update_name>
+        <sys_update_name>sys_script_client_9c3c8734db611300503772ffbf9619de</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-13 13:17:06</sys_updated_on>
-        <table>x_178741_buildtest_main_table</table>
+        <sys_updated_on>2018-04-16 11:47:36</sys_updated_on>
+        <table>x_178741_buildtest_servicenow</table>
         <type>onChange</type>
         <ui_type>10</ui_type>
         <view/>

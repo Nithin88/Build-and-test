@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <messages/>
+        <name>onLoad_ServiceNowForm</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+	g_form.showFieldMsg('short_description', 'Enter a brief description of your issue', 'info');
+	g_form.showFieldMsg('number','Auto generate number is disabled using the below property','info');
+	g_form.showFieldMsg('number', "Assign a task number only upon insert (prevents unused numbers)",'info');
+	g_form.showFieldMsg('priority', "Read only false OOB , true using data policy",'info');
+	g_form.showFieldMsg('priority', "Value is defined in data lookup based on impact , urgency ",'info');
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-16 10:46:23</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c73b0b34db611300503772ffbf9619be</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>onLoad_ServiceNowForm</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Build and test" source="x_178741_buildtest">4e25a50ddb111300503772ffbf9619e7</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Build and test">4e25a50ddb111300503772ffbf9619e7</sys_scope>
+        <sys_update_name>sys_script_client_c73b0b34db611300503772ffbf9619be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-16 12:17:07</sys_updated_on>
+        <table>x_178741_buildtest_servicenow</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
